@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Fortunate Blond Reindeer</title>
-    <meta property="og:title" content="Fortunate Blond Reindeer" />
+    <title>Eco charity - Main</title>
+    <meta property="og:title" content="Eco charity - Main" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
@@ -27,6 +27,27 @@
         background-color: var(--dl-color-gray-white);
 
       }
+	  @keyframes slidedown {
+		0% {
+			opacity: 0;
+			transform: translateY(-250px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+	@keyframes slideright {
+		0% {
+			opacity: 1;
+			transform: translatex(-1000px);
+		}
+
+		100% {
+			opacity: 1;
+			transform: translatex(0);
+		}
     </style>
     <link
       rel="stylesheet"
@@ -43,8 +64,8 @@
 
       <div class="home-container">
         <div id="home_div" class="home-container01">
-          <svg viewBox="0 0 658.2857142857142 1024" class="home-icon">
-            <path
+          <svg onclick="window.location='#about'" viewBox="0 0 658.2857142857142 1024" class="home-icon">
+            <path style="animation: slidedown 1s ease 0s 1 normal forwards;"
               d="M614.286 493.714c0 4.571-2.286 9.714-5.714 13.143l-266.286 266.286c-3.429 3.429-8.571 5.714-13.143 5.714s-9.714-2.286-13.143-5.714l-266.286-266.286c-3.429-3.429-5.714-8.571-5.714-13.143s2.286-9.714 5.714-13.143l28.571-28.571c3.429-3.429 8-5.714 13.143-5.714 4.571 0 9.714 2.286 13.143 5.714l224.571 224.571 224.571-224.571c3.429-3.429 8.571-5.714 13.143-5.714s9.714 2.286 13.143 5.714l28.571 28.571c3.429 3.429 5.714 8.571 5.714 13.143zM614.286 274.286c0 4.571-2.286 9.714-5.714 13.143l-266.286 266.286c-3.429 3.429-8.571 5.714-13.143 5.714s-9.714-2.286-13.143-5.714l-266.286-266.286c-3.429-3.429-5.714-8.571-5.714-13.143s2.286-9.714 5.714-13.143l28.571-28.571c3.429-3.429 8-5.714 13.143-5.714 4.571 0 9.714 2.286 13.143 5.714l224.571 224.571 224.571-224.571c3.429-3.429 8.571-5.714 13.143-5.714s9.714 2.286 13.143 5.714l28.571 28.571c3.429 3.429 5.714 8.571 5.714 13.143z"
             ></path>
           </svg>
@@ -275,8 +296,8 @@
                 </div>
               </div>
             </div>
-            <div class="home-container23">
-              <div class="home-container24">
+            <div style="overflow: hidden;" class="home-container23">
+              <div style="animation: slideright 4s ease 0s 1 normal forwards;" class="home-container24">
                 <span class="home-text26">80%</span>
               </div>
             </div>
@@ -441,9 +462,5 @@
         </footer>
       </div>
     </div>
-    <script
-      data-section-id="header"
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
   </body>
 </html>
